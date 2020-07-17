@@ -2,21 +2,80 @@
 $alt-color: $cyan;
 $body-bg-color: $gray-200;
 $font-color: $light;
+$index-color: rgb(51, 246, 249);
+$border-color: rgb(255, 127, 246);
 
 body {
   background-color: $body-bg-color;
 }
 
-.box {
+.alt-color {
+  background-color: $alt-color;
+}
+
+.box1 {
+  background-color: $index-color;
+  border: 10px solid $border-color;
+  display: flex;
+  height: 150px;
+}
+
+.box2 {
+  background-color: $secondary;
+  border: 1px solid $white;
+  color: $font-color;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+}
+
+.box3 {
+  @include float-right;
+  align-items: center;
+  background-color: $secondary;
+  border: 10px solid $border-color;
+  border-radius: 50px;
+  color: $font-color;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+}
+
+.box4 {
   align-items: center;
   background-color: $secondary;
   border: 1px solid $white;
   color: $font-color;
   display: flex;
-  height: 80px;
+  height: 400px;
   justify-content: center;
 }
 
-.alt-color {
-  background-color: $alt-color;
+.box5 {
+  align-items: center;
+  background-color: $secondary;
+  border: 1px solid $white;
+  color: $font-color;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.box6 {
+  align-items: center;
+  background-color: $secondary;
+  border: 1px solid $white;
+  color: $font-color;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+h1 {
+  text-align: center;
 }
