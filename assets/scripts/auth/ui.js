@@ -1,6 +1,6 @@
 const store = require('../store')
 const signUpSuccess = function () {
-  $('#message').text('Successfully signed up!')
+  $('#message').text('Successfully signed up!, Now Sign In!')
 }
 const signUpFailure = function () {
   $('#message').text('Sign Up failed :(')
