@@ -15,6 +15,7 @@
      <h1>Tic Tac Toe</h1>
       <div class="container">
           <div class="col-12 box1">
+            <button id="sign-up-button">Sign up?</button>
             <form id="sign-up">
                 <input name="credentials[email]" placeholder="email here" type="email">
                 <input name="credentials[password]" placeholder="password here" type="password">
@@ -26,34 +27,39 @@
                 <input name="credentials[password]" placeholder="password here" type="password"/>
                 <button type="submit">sign in</button>
             </form>
+            <button id="change-password-button">Change Password?</button>
             <form id="change-password">
                 <input name="passwords[old]" placeholder="old password" type="password">
                 <input name="passwords[new]" placeholder="new password" type="password">
                 <button type="submit">change password</button>
             </form>
-            <button id="sign-out">Sign Out</button>
+            <button class="sign-out" id="sign-out">Sign Out</button>
           </div>
         </div>
-        <button id="start-game">Start Game</button>
-        <button id="reset">Reset Game</button>
-        <div class="row">
-          <div class="col-3 box2">winners list</div>
-            <div class="col-xs-10 col-sm-8 col-md-6 game-grid">
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot1" data-cell-index="0"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot2" data-cell-index="1"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot3" data-cell-index="2"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot4" data-cell-index="3"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot5" data-cell-index="4"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot6" data-cell-index="5"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot7" data-cell-index="6"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot8" data-cell-index="7"></div>
-              <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="spot9" data-cell-index="8"></div>
+        <div class="container">
+          <button id="start-game">Start Game</button>
+          <button id="reset">Reset Game</button>
+          <div class="row">
+            <div class="col-3 box2">
+              <h4>games played</h4>
+              <div id="games-played"></div>
             </div>
-          <div class="col-3 box4">
-            <div id="status"></div>
-            <div id="message"></div>
-          </div>
-          <div class="col-3 box5">  fastest games </div>
+              <div class="col-xs-10 col-sm-8 col-md-6 game-grid">
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="0" data-cell-index="0"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="1" data-cell-index="1"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="2" data-cell-index="2"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="3" data-cell-index="3"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="4" data-cell-index="4"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="5" data-cell-index="5"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="6" data-cell-index="6"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="7" data-cell-index="7"></div>
+                <div class="col-xs-4 col-sm-6 col-md-8 col-lg-10 col-xl-12 game-spots" id="8" data-cell-index="8"></div>
+              </div>
+            <div class="col-3 box4">
+              <div id="status"></div>
+              <div id="message"></div>
+            </div>
+        </div>
           <div class="col-3 box6">footer</div>
         </div>
   </body>

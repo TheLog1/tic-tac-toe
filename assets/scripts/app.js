@@ -8,8 +8,13 @@
 const authEvents = require('./auth/events')
 const gameEvents = require('./game/events')
 $(() => {
+  $('#sign-out').hide()
+  $('#sign-up').hide()
+  $('#change-password').hide()
+  $('#sign-up-button').on('click', authEvents.showSignUp)
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
+  $('#change-password-button').on('click', authEvents.showChangePassword)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('click', authEvents.onSignOut)
   // game events

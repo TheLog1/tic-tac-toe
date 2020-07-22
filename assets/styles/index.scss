@@ -24,7 +24,7 @@ body {
   background-color: $secondary;
   border: 1px solid $white;
   color: $font-color;
-  display: flex;
+  display: block;
   height: 400px;
   justify-content: center;
 }
@@ -34,7 +34,7 @@ body {
   background-color: $secondary;
   border: 1px solid $white;
   color: $font-color;
-  display: flex;
+  display: block;
   height: 400px;
 }
 
