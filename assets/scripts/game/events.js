@@ -32,13 +32,13 @@ const onCellClick = (e) => {
     api.userChoice(e.target.dataset.cellIndex, currentMove)
       .then(ui.userChoiceSuccess)
       .catch(ui.userChoiceFailure)
-    $('#' + e.target.id).append('<img class="spot-image" src="../assets/images/xGivingit.png" />')
+    $('#' + e.target.id).append('<img class="spot-image" src="../assets/images/XGivingIt.PNG"/>')
     currentMove = '0'
   } else {
     api.userChoice(e.target.dataset.cellIndex, currentMove)
       .then(ui.userChoiceSuccess)
       .catch(ui.userChoiceFailure)
-    $('#' + e.target.id).append('<img class="spot-image" src="../assets/images/oGivingIt.png" />')
+    $('#' + e.target.id).append('<img class="spot-image" src="../assets/images/OGivingIt.PNG"/>')
     currentMove = 'X'
   }
   e.target.style.pointerEvents = 'none'
