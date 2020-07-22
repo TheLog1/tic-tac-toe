@@ -57,33 +57,6 @@ const getGames = function () {
     method: 'GET'
   })
 }
-// const userChoice = function (gameId, index, player) {
-//   return $.ajax({
-//     headers: {
-//       Authorization: 'Bearer ' + store.user.token
-//     },
-//     url: config.apiUrl + '/games/' + ,
-//     method: 'PATCH',
-//     data: {
-//       game: {
-//         cell: {
-//           index: index,
-//           value: player
-//         },
-//         over: false
-//       }
-//     }
-//   //   data: '{
-//   //   "game": {
-//   //     "cell": {
-//   //       "index": 0,
-//   //       "value": "x"
-//   //     },
-//   //     "over": false
-//   //   }
-//   // }'
-//   })
-// }
 
 module.exports = {
   startGame,
