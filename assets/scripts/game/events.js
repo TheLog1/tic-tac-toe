@@ -11,7 +11,6 @@ const onStartGame = function (event) {
     .then(displayGames)
 }
 const displayGames = function (response) {
-  console.log(response)
   $('#games-played').text(response.games.length)
 }
 
@@ -22,6 +21,8 @@ const onReset = () => {
   for (let i = 0; i < gameSpots.length; i++) {
     gameSpots[i].style.pointerEvents = 'auto'
     gameSpots[i].innerHTML = ''
+    gameSpots[i].style.backgroundColor = 'rgb(51, 246, 249)'
+    api.startGame()
   }
 }
 

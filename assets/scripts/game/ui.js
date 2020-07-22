@@ -22,7 +22,6 @@ const userChoiceSuccess = function (response) {
   store.game = response.game
   $('#status').text('user picked a box!')
 
-  // console.log(store.game)
   checkGameStatus(store.game)
 }
 const checkGameStatus = (game) => {
@@ -32,14 +31,10 @@ const checkGameStatus = (game) => {
     // all equal the same thing either x or o
     const winningString = cells[winCombo[0]] + cells[winCombo[1]] + cells[winCombo[2]]
     if (winningString === 'XXX' || winningString === '000') {
-      console.log('you won!')
       $('#message').text('You Won')
       api.gameOver()
-        .then(console.log('workede'))
-        .catch(console.log('ntworkdede'))
       gameSpots.forEach(function (gameSpot) {
         const cellIndex = parseInt(gameSpot.dataset.cellIndex)
-        console.log(typeof cellIndex)
         if (winCombo.includes(cellIndex)) {
           gameSpot.style.backgroundColor = 'green'
           gameSpot.style.pointerEvents = 'none'
