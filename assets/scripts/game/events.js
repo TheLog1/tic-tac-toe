@@ -32,13 +32,13 @@ const onCellClick = (e) => {
     api.userChoice(e.target.dataset.cellIndex, currentMove)
       .then(ui.userChoiceSuccess)
       .catch(ui.userChoiceFailure)
-    $('#' + e.target.id).append('<img class="spot-image" src="../images/XGivingIt.PNG"/>')
+    $('#' + e.target.id).append('<img class="spot-image" src="https://github.com/TheLog1/tic-tac-toe-client/blob/master/images/xGivingit.png?raw=true"/>')
     currentMove = '0'
   } else {
     api.userChoice(e.target.dataset.cellIndex, currentMove)
       .then(ui.userChoiceSuccess)
       .catch(ui.userChoiceFailure)
-    $('#' + e.target.id).append('<img class="spot-image" src="../images/OGivingIt.PNG"/>')
+    $('#' + e.target.id).append('<img class="spot-image" src="https://raw.githubusercontent.com/TheLog1/tic-tac-toe-client/master/images/oGivingIt.png"/>')
     currentMove = 'X'
   }
   e.target.style.pointerEvents = 'none'
