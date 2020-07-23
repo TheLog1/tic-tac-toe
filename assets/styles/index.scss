@@ -22,7 +22,8 @@ body {
 
 .box2 {
   background-color: $secondary;
-  border: 1px solid $white;
+  border: 10px solid $index-color;
+  border-radius: 30px;
   color: $font-color;
   display: block;
   height: 400px;
@@ -32,10 +33,12 @@ body {
 
 .box4 {
   background-color: $secondary;
-  border: 1px solid $white;
+  border: 10px solid $index-color;
+  border-radius: 30px;
   color: $font-color;
   display: block;
   height: 400px;
+  justify-content: center;
 }
 
 .box5 {
@@ -49,14 +52,12 @@ body {
 }
 
 .box6 {
-  align-items: center;
   background-color: $secondary;
-  border: 1px solid $white;
+  border: 10px solid $index-color;
+  border-radius: 30px;
   color: $font-color;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  justify-content: center;
+  display: block;
+  height: 50px;
 }
 
 .start-game {
@@ -79,6 +80,7 @@ body {
 
 .game-spots {
   background: $index-color;
+  border-radius: 30px;
   cursor: pointer;
   height: 160px;
   width: 160px;

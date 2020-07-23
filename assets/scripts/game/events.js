@@ -14,14 +14,15 @@ const displayGames = function (response) {
 
 const gameSpots = document.querySelectorAll('.game-spots')
 let currentMove = 'X'
-
+// need reset to do what start game does. resets the whole gameboard
 const onReset = () => {
   for (let i = 0; i < gameSpots.length; i++) {
-    gameSpots[i].style.pointerEvents = 'auto'
     gameSpots[i].innerHTML = ''
     gameSpots[i].style.backgroundColor = 'rgb(51, 246, 249)'
-    api.startGame()
+    gameSpots[i].style.pointerEvents = 'none'
   }
+  $('#message').text('Now Click Start Game To Start A New Game!')
+  $('#status').text('')
 }
 
 const onCellClick = (e) => {

@@ -9,6 +9,10 @@ const signInSuccess = function (response) {
   $('#message').text('Sign in Success!')
   store.user = response.user
   $('#sign-out').show()
+  $('#sign-up').hide()
+  $('#sign-in').hide()
+  $('#sign-up-button').hide()
+  $('#change-password-button').show()
 }
 const signInFailure = function () {
   $('#message').text('Sign in failed')
@@ -24,6 +28,8 @@ const signOutSuccess = function () {
   $('#message').text('sign out success!')
   store.user = null
   $('#sign-out').hide()
+  $('#sign-in').show()
+  $('#change-password-button').hide()
 }
 const signOutFailure = function () {
   $('#message').text('sign out failed')

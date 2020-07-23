@@ -14,6 +14,7 @@ const winCombos = [
 const startGameSuccess = function (response) {
   store.game = response.game
   $('#message').text('Game in progress!')
+  $('.game-spots').css('pointer-events', 'auto')
 }
 const startGameFailure = function () {
   $('#message').text('You Need To Sign In!')
@@ -49,10 +50,17 @@ const checkGameStatus = (game) => {
 const userChoiceFailure = function () {
   $('#status').text('user choice failed to complete')
 }
-
+const resetGameSuccess = function (response) {
+  $('#message').text('user reset the game!')
+}
+const resetGameFailure = function () {
+  $('#message').text('failed to reset properly. Try again')
+}
 module.exports = {
   startGameFailure,
   startGameSuccess,
   userChoiceSuccess,
-  userChoiceFailure
+  userChoiceFailure,
+  resetGameSuccess,
+  resetGameFailure
 }
