@@ -71,15 +71,16 @@ body {
   border: 10px solid $border-color;
   border-radius: 50px;
   color: $font-color;
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  // display: grid;
+  // grid-gap: 15px;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
   height: 600px;
 }
 
 .game-spots {
   background: $index-color;
+  border: 2px solid rgb(163, 3, 194);
   border-radius: 30px;
   cursor: pointer;
   height: 160px;
